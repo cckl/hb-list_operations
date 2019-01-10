@@ -73,7 +73,7 @@ def inner_four(input_list):
 def inner_four_end(input_list):
     """Return the elements that are 6th, 5th, 4th, and 3rd from the end of input_list."""
 
-    return input_list[4:8]
+    return input_list[-6:-3]
 
 
 def replace_head(input_list):
@@ -98,8 +98,8 @@ def replace_middle(input_list):
 def delete_third_and_seventh(input_list):
     """Remove third and seventh elements of input_list and return nothing."""
 
+    del input_list[6]
     del input_list[2]
-    del input_list[-2]
 
 
 def delete_middle(input_list):
