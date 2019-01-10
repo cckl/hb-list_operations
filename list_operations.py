@@ -77,18 +77,9 @@ def inner_four_end(input_list):
 
 
 def replace_head(input_list):
-    """Replace the head of input_list with the value 42 and return nothing.
-
-    For example:
-
-    >>> multiples = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
-    >>> replace_head(multiples)
-    >>> multiples == [42, 3, 6, 9, 12, 15, 18, 21, 24, 27]
-    True
-
-    """
-
-    pass
+    """Replace the head of input_list with the value 42 and return nothing."""
+    input_list[0] = 42
+    
 
 
 def replace_third_and_last(input_list):
@@ -103,7 +94,8 @@ def replace_third_and_last(input_list):
 
     """
 
-    pass
+    input_list[2] = 37
+    input_list[-1] = 37
 
 
 def replace_middle(input_list):
