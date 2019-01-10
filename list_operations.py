@@ -83,70 +83,29 @@ def replace_head(input_list):
 
 
 def replace_third_and_last(input_list):
-    """Replace third and last elements of input_list with 37 and return nothing.
-
-    For example:
-
-    >>> multiples = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
-    >>> replace_third_and_last(multiples)
-    >>> multiples == [0, 3, 37, 9, 12, 15, 18, 21, 24, 37]
-    True
-
-    """
+    """Replace third and last elements of input_list with 37 and return nothing."""
 
     input_list[2] = 37
     input_list[-1] = 37
 
 
 def replace_middle(input_list):
-    """Replace all elements of a list but the first and last two with 42 and 37.
+    """Replace all elements of a list but the first and last two with 42 and 37."""
 
-    After the replacement, 42 and 37 should appear in that order in input_list.
-
-    Return nothing.
-
-    For example:
-
-    >>> multiples = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
-    >>> replace_middle(multiples)
-    >>> multiples == [0, 3, 42, 37, 24, 27]
-    True
-
-    """
-
-    pass
+    input_list[2:-2] = [42,37]
 
 
 def delete_third_and_seventh(input_list):
-    """Remove third and seventh elements of input_list and return nothing.
+    """Remove third and seventh elements of input_list and return nothing."""
 
-    For example:
-
-    >>> notes = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
-    >>> delete_third_and_seventh(notes)
-    >>> notes == ['Do', 'Re', 'Fa', 'So', 'La', 'Do']
-    True
-
-    """
-
-    pass
+    del input_list[2]
+    del input_list[-2]
 
 
 def delete_middle(input_list):
-    """Remove all elements from input_list except the first two and last two.
+    """Remove all elements from input_list except the first two and last two."""
 
-    Return nothing.
-
-    For example:
-
-    >>> notes = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
-    >>> delete_middle(notes)
-    >>> notes == ['Do', 'Re', 'Ti', 'Do']
-    True
-
-    """
-
-    pass
+    del input_list[2:-2]
 
 
 ##############################################################################
