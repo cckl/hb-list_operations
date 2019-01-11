@@ -111,9 +111,18 @@ def custom_reverse(input_list):
 
     """
     length = custom_len(input_list)-1
+
     for i in range(0, length):
-        custom_append(input_list, input_list[i])
-        print(input_list)
+        if length == i:
+            break
+        else:
+            print(input_list)
+            last_item = input_list[length]
+            input_list[length] = input_list[i]
+            input_list[i] = last_item
+            length = length - 1
+    
+    print(input_list)
 
 
 
@@ -130,7 +139,7 @@ def custom_contains(input_list, value):
 
 def custom_equality(some_list, another_list):
     """Return True if passed lists are identical, False otherwise."""
-    
+
     length = custom_len(some_list)
     for i in range(0, length):
         if some_list[i] != another_list[i]:
